@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Pacifico&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <section class="app d-flex justify-content-start align-items-center flex-column pb-5">
+    <h1>Bookmarker</h1>
+    <div class="wave text-center">
+    </div>
+    <div class="app-box">
+      <div class="container py-5">
+        <h2 class="text-center">
+          <i class="fa-solid fa-star fa-spin"></i>
+          <span>Bookmark your favorite sites</span>
+          <i class="fa-solid fa-star fa-spin"></i>
+        </h2>
+        <form action="" class="pb-4">
+          <div class="form-group pt-4 pb-3">
+            <label for="siteName" class="pb-2"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+            <div class="name-field position-relative">
+              <input type="text" placeholder="Bookmark Name" id="siteName" class="form-control" />
+              <div class="check-name"></div>
+            </div>
+          </div>
+          <div class="form-group pb-4">
+            <label for="siteUrl" class="pb-2"><i class="fa-solid fa-link me-2"></i>Site URL</label>
+            <div class="url-field position-relative">
+              <input type="text" placeholder="Website URL" id="siteUrl" class="form-control" />
+              <div class="check-url"></div>
+            </div>
+          </div>
+          <button class="btn px-5 d-block mx-auto" id="saveData">Save</button>
+        </form>
+        <div class="saved-sites">
+          <table class="table text-center">
+            <thead>
+              <th>Index</th>
+              <th>Website Name</th>
+              <th>Visit</th>
+              <th>Delete</th>
+            </thead>
+            <tbody id="tableData">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
